@@ -1,0 +1,26 @@
+{
+  "name": "backend-fundamentals-notes",
+  "version": "1.0.0",
+  "description": "🧠 The Engineer Rule (burn this in)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sucessdy/backend-fundamentals-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sucessdy/backend-fundamentals-notes/issues"
+  },
+  "homepage": "https://github.com/sucessdy/backend-fundamentals-notes#readme",
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}

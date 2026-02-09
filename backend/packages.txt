@@ -1,0 +1,6 @@
+what is package ? 
+A package is a code which other developer wrote for us to use the package . 
+
+package.json -> a code where is depends . 
+
+package.lock.json ->. use for all the code and package version and all the package whch is depends or not... install all the info 

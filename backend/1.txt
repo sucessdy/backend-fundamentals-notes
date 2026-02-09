@@ -1,0 +1,51 @@
+// How Backend Actually Works (step-by-step)
+
+// Let’s take a login example.
+
+Step 1: Frontend sends a request
+
+You enter:
+
+email = abc@gmail.com
+password = 1234
+
+
+Frontend sends:
+
+POST /login
+{
+  email,
+  password
+}
+
+Step 2: Backend receives the request
+
+Backend:
+
+Reads the request
+
+Understands intent (“login attempt”)
+
+Step 3: Backend applies business logic
+
+It asks:
+
+Does this user exist?
+
+Is the password correct?
+
+Is the account blocked?
+
+Should I create a session/token?
+
+Step 4: Backend talks to the database
+SELECT * FROM users WHERE email = ?
+
+Step 5: Backend responds
+✅ Login success
+OR
+❌ Invalid credentials
+
+
+Frontend never talks directly to the database.
+That’s a hard rule.
