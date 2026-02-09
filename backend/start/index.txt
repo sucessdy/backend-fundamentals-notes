@@ -1,0 +1,7 @@
+So, first how we start any node js project 
+
+First we install the package.json file 
+
+npm init -y 
+
+its actually install the file 

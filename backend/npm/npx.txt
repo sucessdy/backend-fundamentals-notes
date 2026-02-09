@@ -1,0 +1,40 @@
+So, this folder name should be npm vs npx...(its confuse me a lot)
+
+👉 npm installs packages
+👉 npx runs packages
+
+What is npm?
+npm = Node Package Manager
+What npm does
+
+Downloads packages
+Saves them in node_modules
+Adds entry in package.json
+Think of npm like this 🧠
+
+“I want this tool permanently in my project.”
+
+
+What is npx?
+npx = Node Package eXecute
+
+What npx does
+Runs a package without installing it permanently
+Uses it once or temporarily
+Think of npx like this 🧠
+
+“I just want to use this tool now, not keep it.”
+
+
+
+The BIG confusion point (listen carefully 👂)
+❌ npm cannot easily run a package that is NOT installed
+✅ npx can run a package even if it’s NOT installed
+
+
+Real-life analogy (this is the key 🔑)
+npm = buying a tool 🧰
+You buy a hammer and keep it at home.
+
+npx = borrowing a tool 🧰
+You borrow a hammer, use it, return it.

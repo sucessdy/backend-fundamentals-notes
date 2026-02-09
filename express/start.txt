@@ -1,0 +1,71 @@
+Step-by-step: Express setup in an empty folder
+
+1️⃣ Create an empty folder
+mkdir my-server
+cd my-server
+
+2️⃣ Initialize the project
+This creates package.json
+npm init -y
+✔️ Now your folder officially becomes a Node project
+
+3️⃣ Create server file
+You can name it anything, but best practice:
+index.js ✅
+server.js ✅
+touch index.js
+This file will contain your Express server code.
+
+
+4️⃣ Install Express
+Express is needed to run the server, so it goes into dependencies
+npm install express
+
+✔️ Added to:
+node_modules
+package.json → dependencies
+
+5️⃣ Install Nodemon
+Nodemon is only for development convenience
+npm install nodemon --save-dev
+
+✔️ Added to:
+devDependencies
+Why nodemon is a devDependency (important correction)
+Your idea is mostly right, but let me clean the logic 👇
+
+What nodemon does
+Watches file changes
+Auto-restarts the server
+Saves developer time
+
+Correct reason
+
+Nodemon is a devDependency because it is not required in production — it is only a development tool.
+
+
+Nodemon prevents developers from manually restarting the server again and again.
+
+Typical package.json scripts (BEST PRACTICE 🔥)
+
+Add this:
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+}
+
+Run commands
+npm run dev    // development
+npm start     // production
+
+Final clean explanation (exam / interview ready)
+
+First, initialize the project using npm init -y which creates package.json.
+Then create index.js or server.js to write the server code.
+Install Express as a dependency because it is required to run the server.
+Install Nodemon as a devDependency because it is only used during development to auto-restart the server and save time.
+
+One-line memory lock 🔐
+
+Express → app needs → dependencies
+Nodemon → dev comfort → devDependencies

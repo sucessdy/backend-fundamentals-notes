@@ -1,0 +1,35 @@
+SO, the real question is what is the difference btw dependencies vs devDependencies
+
+dependencies
+What are they?
+Packages that your app needs to RUN in production.
+If you remove them → your app will break 😵
+
+Examples
+express → server must run
+mongoose → database connection
+axios → API calls
+react (for frontend build output)
+
+Definition
+dependencies are packages required for the application to run.
+
+
+
+
+devDependencies
+What are they?
+Packages used only while developing, not needed after deployment.
+
+If you remove them →
+✅ App still runs
+❌ Developer experience suffers
+
+Examples
+nodemon → auto-restart server
+eslint → code quality
+prettier → formatting
+jest → testing
+
+Definition
+devDependencies are packages used only during development.
