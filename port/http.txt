@@ -1,0 +1,8 @@
+what is http 
+(hypertext transfer protocol ) 
+
+what is protocol 
+is a set of rules over the network
+
+
+

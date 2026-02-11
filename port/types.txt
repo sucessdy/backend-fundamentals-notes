@@ -1,0 +1,72 @@
+HTTP Methods 
+GET
+
+Used to READ / fetch data from the server.
+
+✅ Does not change data
+✅ Data comes from server → client
+
+Example:
+
+Get user profile
+Get list of products
+
+POST
+
+Used to SEND data to the server to create new data.
+
+✅ Creates something new
+✅ Data goes client → server
+
+Example:
+
+Signup form
+Login form
+Create a new post
+
+PUT
+
+This is where confusion usually starts — listen carefully 👂
+
+PUT replaces the entire resource with new data.
+
+🔁 Full update
+You must send all fields, even unchanged ones.
+
+Example:
+
+Updating full user profile (name, email, photo, bio)
+
+If you miss a field → it may be overwritten or removed.
+
+PATCH
+
+PATCH updates only specific fields of existing data.
+
+✂️ Partial update
+Send only what changed.
+
+Example:
+
+Change username
+Update password
+Change profile photo only
+
+DELETE
+
+Used to remove data from the server/database.
+
+Example:
+
+Delete account
+Delete post
+
+PUT vs PATCH (THIS is the key difference 🔑)
+Method	Update type
+PUT	Full replacement
+PATCH	Partial update
+Easy memory trick 🧠
+
+PUT → put everything
+
+PATCH → patch a part

@@ -1,18 +1,16 @@
 {
-  "name": "express",
+  "name": "day-2",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "nodemon index.js",
-    "dev": "nodemon index.js"
-  },
-  "keywords": [],
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+}, 
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@dotenvx/dotenvx": "^1.52.0",
     "express": "^5.2.1",
     "nodemon": "^3.1.11"
   }

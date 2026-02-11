@@ -1,2 +1,7 @@
 what is port number ? 
 
+A port number is a 16-bit integer (0 to 65535) that acts as a communication endpoint in networking, directing incoming data to specific applications or services on a computer.
+
+in a simple language 
+
+a number unique number, for your devices ... which application ur actually using that directs network traffic to the correct application 
