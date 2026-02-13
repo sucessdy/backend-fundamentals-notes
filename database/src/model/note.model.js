@@ -6,4 +6,17 @@ const noteSchema = new mongoose.Schema({
     title : {type : String , required : true} , 
 
     content : {type : String}
-})
+}, 
+{ timestamps: true})
+
+const noteModel = mongoose.model("notes", noteSchema);
+/*
+we ' want to perform this action in the Db..so we need to create a model to do all those operation 
+ CRUD operation 
+ create  - POST 
+ read = GEt
+ update = PATCH
+ delete = DELTE
+*/
+
+export default noteModel ; 
