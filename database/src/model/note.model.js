@@ -10,6 +10,10 @@ const noteSchema = new mongoose.Schema({
 { timestamps: true})
 
 const noteModel = mongoose.model("notes", noteSchema);
+
+
+// const noteModel = mongoose.model("notes", (to give the name of the collection ) noteSchema);
+
 /*
 we ' want to perform this action in the Db..so we need to create a model to do all those operation 
  CRUD operation 
