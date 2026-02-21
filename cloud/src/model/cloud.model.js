@@ -1,9 +1,9 @@
 import mongoose from "mongoose";
 
 const postSchema = new mongoose.Schema({
-    Image: String  , 
+    image: String  , 
     caption: String
-});
+}, { timestamps: true } );
 
 const postModel = mongoose.model("posts", postSchema);
 
