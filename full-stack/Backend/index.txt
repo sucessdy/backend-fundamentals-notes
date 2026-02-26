@@ -1,0 +1,1 @@
+we store the image -> cloud storage provider (we store the images here )  -> and we get the URL (in the database we never store the images. we store the url the path our database is not design to store the images )

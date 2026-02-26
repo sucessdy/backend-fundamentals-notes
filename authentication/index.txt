@@ -1,0 +1,4 @@
+Verfication
+Validation
+Authentication
+Authoriaztion

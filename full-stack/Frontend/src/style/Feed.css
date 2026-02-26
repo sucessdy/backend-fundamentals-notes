@@ -1,0 +1,48 @@
+/* Feed layout */
+.feed-section {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed-section h1 {
+  font-size: 56px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Post card */
+.post-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+/* Post image */
+.post-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption */
+.post-caption {
+  padding: 12px 15px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Empty state */
+.no-post {
+  margin-top: 40px;
+  color: #666;
+  font-size: 18px;
+}
