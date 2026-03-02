@@ -1,4 +1,5 @@
-Verfication
-Validation
-Authentication
-Authoriaztion
+
+Validation -> is this format is correct 
+Verficationn-> is this data is correct or not 
+Authentication -> to identlify from where this equeasdt is comming from 
+Authoriaztion -> prevaliges 
