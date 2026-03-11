@@ -1,5 +1,124 @@
 
-Validation -> is this format is correct 
-Verficationn-> is this data is correct or not 
-Authentication -> to identlify from where this equeasdt is comming from 
-Authoriaztion -> prevaliges 
+1️⃣ Validation
+
+Validation = checking the format of input
+It checks whether the data structure is correct before using it.
+
+Examples:
+Email format valid?
+Password length ≥ 8?
+Age is a number?
+Required fields present?
+Example:
+{
+  "email": "user@gmail.com",
+  "password": "12345678"
+}
+
+Validation checks:
+email format ✔
+password length ✔
+❌ Invalid example
+
+Validation checks if the input format is correct.
+
+
+2️⃣ Verification
+Verification = checking truth or correctness of data
+It checks whether the data actually belongs to the user or is true.
+
+Examples:
+OTP verification
+Email verification
+Phone verification
+Document verification
+Example flow:
+User registers
+Server sends OTP
+User enters OTP
+Server checks if OTP is correct
+
+🧠 definition:
+Verification confirms the data is real or correct.
+
+
+3️⃣ Authentication
+
+Authentication = identifying WHO the user is
+Server checks user identity.
+
+Examples:
+Login with email + password
+Login with Google
+Login with JWT token
+Login with session
+
+Example:
+User sends request:
+POST /login
+with
+email
+password
+
+Server checks database.
+If correct → user authenticated.
+
+🧠 Simple definition:
+Authentication proves the identity of the user
+
+4️⃣ Authorization
+Authorization = checking what the user is allowed to do
+
+After authentication.
+Example users:
+User	Permission
+Admin	delete users
+User	read profile
+Guest	view public pages
+
+Example:
+User tries:
+DELETE /users/123
+
+Server checks role.
+If role ≠ admin → reject.
+🧠 Simple definition:
+Authorization checks user permissions.
+
+What is cookie??? 
+A cookie is small data stored in the browser by the server.
+Browser automatically sends cookies with every request to the same server.
+Flow:
+
+Server → sets cookie
+Browser → stores cookie
+Browser → sends cookie in future requests
+Example response from server:
+
+Set-Cookie: sessionId=abc123
+Browser stores it.
+Next request:
+Cookie: sessionId=abc123
+
+Server reads it.
+
+Cookie Flow
+Client → Request
+Server → Response + Cookie
+
+Browser stores cookie
+
+Next Request
+Browser → sends cookie automatically
+Server → reads c ookie
+What cookies are used for
+
+Common uses:
+Login sessions
+JWT tokens
+User preferences
+Tracking sessions
+
+Example:
+sessionId = 7x82hdb82
+Server uses it to identify the user.
